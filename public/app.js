@@ -1,6 +1,6 @@
 
-const url = "http://localhost:3000";
-// const url='https://twitternaveed.herokuapp.com'; // yaha pe heroku ka link lagyga 
+//const url = "http://localhost:3000";
+const url='https://twitternaveed.herokuapp.com'; // yaha pe heroku ka link lagyga 
 // const { default: axios } = require("axios");
 var socket = io(url);
 
