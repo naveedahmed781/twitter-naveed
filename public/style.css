@@ -1,0 +1,23 @@
+body{
+  background-color: black;
+}
+.main{
+  border: 2px solid black;
+  background-color: wheat;
+  width: 35%;
+  height: 450px;
+}
+.text{
+  width: 35%;
+  height: 25px;
+}
+button{
+  width: 35%;
+  height: 30px;
+  color: white;
+  background-color: black;
+}
+button:hover{
+  color: black;
+  background-color: white;
+}
