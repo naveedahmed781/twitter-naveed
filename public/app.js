@@ -49,8 +49,8 @@ function userLogin() {
         withCredentials: true
     }).then((response) => {
         console.log(response);
-        alert(response.data.message)
-        location.href = "./profile.html"
+        // alert(response.data.message)
+        // location.href = "./profile.html"
 
     }, (error) => {
         // alert(error.data.message)

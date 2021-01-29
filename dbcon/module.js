@@ -1,6 +1,6 @@
 var mongoose = require("mongoose");
 // var dbURI = process.env.DBURI
-let dbURI = " mongodb+srv://naveed781:12345@cluster0.b18eo.mongodb.net/TEST-DB?retryWrites=true&w=majority"; 
+let dbURI = "mongodb+srv://naveed781:12345@cluster0.b18eo.mongodb.net/TEST-DB?retryWrites=true&w=majority"; 
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 mongoose.connection.on('connected', function () {
