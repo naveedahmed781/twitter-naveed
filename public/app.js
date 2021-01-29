@@ -1,6 +1,7 @@
 
-//const url = "http://localhost:3000";
-const url='https://twitternaveed.herokuapp.com'; // yaha pe heroku ka link lagyga 
+// const url = "http://localhost:3000";
+const url='https://twitternaveed.herokuapp.com';
+ // yaha pe heroku ka link lagyga 
 // const { default: axios } = require("axios");
 var socket = io(url);
 
@@ -31,7 +32,7 @@ function signup() {
         }
     }).catch((error) => {
         alert(response.data.message);
-        console.log(error);
+        // console.log(error);
     });
 
     return false
@@ -52,8 +53,8 @@ function userLogin() {
         location.href = "./profile.html"
 
     }, (error) => {
-        alert(error.data.message)
-        console.log(error);
+        // alert(error.data.message)
+        // console.log(error);
     })
     // .catch(function (error) {
     //     alert("PASSWORD OR EMAIL IS WRONG"+error.response.data.message)
@@ -114,7 +115,7 @@ function getProfile() {
 
 
     }, (error) => {
-        console.log(error.message);
+        // console.log(error.message);
         location.href = "./login.html"
     });
     return false
@@ -142,8 +143,8 @@ function forget() {
             alert(response.data.message)
         }
     }, (error) => {
-        console.log("error is here")
-        console.log(error);
+        // console.log("error is here")
+        // console.log(error);
     });
     return false
 }
@@ -204,7 +205,7 @@ function logout() {
         console.log(response);
         location.href = "./login.html"
     }, (error) => {
-        console.log(error);
+        // console.log(error);
     });
     return false
 }
@@ -258,7 +259,7 @@ function getTweets() {
 
        
     }, (error) => {
-        console.log(error.message);
+        // console.log(error.message);
     });
     return false
 }
@@ -290,7 +291,7 @@ function getMyTweets() {
         // console.log(userHtml)
         document.getElementById('usertext-area').innerHTML = userHtml;
     }, (error) => {
-        console.log(error.message);
+        // console.log(error.message);
     });
     return false
 }
